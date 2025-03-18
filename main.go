@@ -29,9 +29,7 @@ func main() {
 		},
 	}
 
-	arrivalBoard := f.Board{
-		Flights: flightsList,
-	}
+	arrivalBoard := f.NewBoard(flightsList)
 
 	arrivalBoard.Display()
 }
