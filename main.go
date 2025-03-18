@@ -4,34 +4,34 @@ import (
 	"fmt"
 	"time"
 
-	"golang.makers.tech/arrivals/flights" // name of module + package name (which is "flights")
-	// golang.makers.tech/arrivals + /flights
+	f "golang.makers.tech/arrivals/flights" // Alias the import
 )
 
 func main() {
 	fmt.Println("Welcome to the Arrivals Board!")
 
-	// create 3 flights
-	flight1 := &flights.Flight{
-		Code:    "BA123",
-		Origin:  "Madrid",
-		DueTime: time.Now().Add(2 * time.Hour),
+	// create a slice of Flights
+	flightsList := []f.Flight{
+		{
+			Code:    "BA123",
+			Origin:  "Madrid",
+			DueTime: time.Now().Add(2 * time.Hour),
+		},
+		{
+			Code:    "EJ456",
+			Origin:  "Paris",
+			DueTime: time.Now().Add(3 * time.Hour),
+		},
+		{
+			Code:    "RY789",
+			Origin:  "Berlin",
+			DueTime: time.Now().Add(4 * time.Hour),
+		},
 	}
 
-	flight2 := &flights.Flight{
-		Code:    "EJ456",
-		Origin:  "Paris",
-		DueTime: time.Now().Add(3 * time.Hour),
+	arrivalBoard := f.Board{
+		Flights: flightsList,
 	}
 
-	flight3 := &flights.Flight{
-		Code:    "RY789",
-		Origin:  "Berlin",
-		DueTime: time.Now().Add(4 * time.Hour),
-	}
-
-	// Print flight information
-	fmt.Println(flight1)
-	fmt.Println(flight2)
-	fmt.Println(flight3)
+	arrivalBoard.Display()
 }
