@@ -17,7 +17,6 @@ func GetFlightsFromJSON(filePath string) ([]Flight, error) {
 	// ================= Open ===================
 	file, err := os.Open(filePath)
 	if err != nil {
-		fmt.Println("Error opening file:", err)
 		return nil, err
 	}
 	defer file.Close()
@@ -25,7 +24,6 @@ func GetFlightsFromJSON(filePath string) ([]Flight, error) {
 	// ================= Read ===================
 	data, err := io.ReadAll(file)
 	if err != nil {
-		fmt.Println("Error reading file:", err)
 		return nil, err
 	}
 
