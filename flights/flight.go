@@ -6,9 +6,9 @@ import (
 )
 
 type Flight struct {
-	Code    string
-	Origin  string
-	DueTime time.Time
+	Code    string    `json:"code"`
+	Origin  string    `json:"from"`
+	DueTime time.Time `json:"scheduled_arrival"`
 }
 
 func (f Flight) String() string {
