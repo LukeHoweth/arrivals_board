@@ -34,12 +34,12 @@ func (b Board) Display() {
 	columnFmt := color.New(color.FgYellow).SprintfFunc()
 
 	// Creating a new table
-	tbl := table.New("Time", "From", "Code")
+	tbl := table.New("Time", "From", "Code", "Status")
 	tbl.WithHeaderFormatter(headerFmt).WithFirstColumnFormatter(columnFmt)
 
 	// Adding rows to the table
 	for _, flight := range b.flights {
-		tbl.AddRow(flight.DueTime.Format("15:04"), flight.Origin, flight.Code)
+		tbl.AddRow(flight.DueTime.Format("15:04"), flight.Origin, flight.Code, flight.GetStatus())
 	}
 	tbl.Print()
 }
