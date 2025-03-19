@@ -71,6 +71,126 @@
           "cancelled": false,
           "expected_at": "2024-03-14T12:57:00Z"
         }
+      },
+      {
+        "from": "London",
+        "to": "Manchester",
+        "code": "BA1386",
+        "scheduled_departure": "2024-03-14T13:30:00Z",
+        "scheduled_arrival": "2024-03-14T14:30:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": false,
+          "expected_at": "2024-03-14T14:35:00Z"
+        }
+      },
+      {
+        "from": "Zurich",
+        "to": "Doha",
+        "code": "LX740",
+        "scheduled_departure": "2024-03-14T14:15:00Z",
+        "scheduled_arrival": "2024-03-14T21:45:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": false,
+          "expected_at": "2024-03-14T21:50:00Z"
+        }
+      },
+      {
+        "from": "Manchester",
+        "to": "San Francisco",
+        "code": "VS126",
+        "scheduled_departure": "2024-03-14T15:20:00Z",
+        "scheduled_arrival": "2024-03-15T02:40:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": false,
+          "expected_at": "2024-03-15T02:45:00Z"
+        }
+      },
+      {
+        "from": "Calgary",
+        "to": "Hyderabad",
+        "code": "AC990",
+        "scheduled_departure": "2024-03-14T16:30:00Z",
+        "scheduled_arrival": "2024-03-15T12:30:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": true,
+          "expected_at": ""
+        }
+      },
+      {
+        "from": "Doha",
+        "to": "Zurich",
+        "code": "QR193",
+        "scheduled_departure": "2024-03-14T13:45:00Z",
+        "scheduled_arrival": "2024-03-14T18:15:00Z",
+        "status": {
+          "arrived": "2024-03-14T18:10:00Z",
+          "cancelled": false,
+          "expected_at": "2024-03-14T18:10:00Z"
+        }
+      },
+      {
+        "from": "San Francisco",
+        "to": "Calgary",
+        "code": "UA724",
+        "scheduled_departure": "2024-03-14T14:00:00Z",
+        "scheduled_arrival": "2024-03-14T17:30:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": false,
+          "expected_at": "2024-03-14T17:35:00Z"
+        }
+      },
+      {
+        "from": "Hyderabad",
+        "to": "Doha",
+        "code": "AI967",
+        "scheduled_departure": "2024-03-14T16:20:00Z",
+        "scheduled_arrival": "2024-03-14T19:50:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": false,
+          "expected_at": "2024-03-14T20:00:00Z"
+        }
+      },
+      {
+        "from": "Manchester",
+        "to": "Calgary",
+        "code": "AC851",
+        "scheduled_departure": "2024-03-14T15:45:00Z",
+        "scheduled_arrival": "2024-03-15T01:15:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": false,
+          "expected_at": "2024-03-15T01:20:00Z"
+        }
+      },
+      {
+        "from": "Zurich",
+        "to": "San Francisco",
+        "code": "LX38",
+        "scheduled_departure": "2024-03-14T13:30:00Z",
+        "scheduled_arrival": "2024-03-14T23:45:00Z",
+        "status": {
+          "arrived": "2024-03-14T23:40:00Z",
+          "cancelled": false,
+          "expected_at": "2024-03-14T23:40:00Z"
+        }
+      },
+      {
+        "from": "Doha",
+        "to": "Hyderabad",
+        "code": "QR500",
+        "scheduled_departure": "2024-03-14T14:30:00Z",
+        "scheduled_arrival": "2024-03-14T20:45:00Z",
+        "status": {
+          "arrived": "",
+          "cancelled": false,
+          "expected_at": "2024-03-14T20:50:00Z"
+        }
       }
     ],
     "airports": {

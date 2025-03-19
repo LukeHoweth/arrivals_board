@@ -6,10 +6,11 @@ import (
 )
 
 type Flight struct {
-	Code    string       `json:"code"`
-	Origin  string       `json:"from"`
-	DueTime time.Time    `json:"scheduled_arrival"`
-	Status  FlightStatus `json:"status"`
+	Code        string       `json:"code"`
+	Origin      string       `json:"from"`
+	Destination string       `json:"to"`
+	DueTime     time.Time    `json:"scheduled_arrival"`
+	Status      FlightStatus `json:"status"`
 }
 
 type FlightStatus struct {
