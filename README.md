@@ -1,8 +1,2 @@
-```
-flight_board
-├── go.mod # Go configuration and dependencies
-├── main.go # Main file for your flight board
-├── README.md # Information and guidance on how to use the program
-├── flights # Package related to flights that will be displayed
-    └── flight.go # The file that will contain code for a single flight
-```
+Preview:
+![Screenshot 2025-03-19 at 15 15 49](https://github.com/user-attachments/assets/038da29f-11b0-42e8-8a77-4e9578d759a7)
